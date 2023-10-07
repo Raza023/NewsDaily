@@ -1,0 +1,43 @@
+databaseChangeLog:
+  - changeSet:
+      id: schema-0.0.1
+      author: ORION
+      changes:
+        - createTable:
+            tableName: users
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+              - column:
+                  name: username
+                  type: VARCHAR(255)
+              - column:
+                  name: password
+                  type: VARCHAR(255)
+              - column:
+                  name: email
+                  type: VARCHAR(255)
+              - column:
+                  name: role
+                  type: VARCHAR(255)
+              - column:
+                  name: is_disabled
+                  type: BOOLEAN
+        - addPrimaryKey:
+            tableName: users
+            columnNames: id
+
+        - addUniqueConstraint:
+            tableName: users
+            columnNames: username
+        - addUniqueConstraint:
+            tableName: users
+            columnNames: email
+        - createIndex:
+            tableName: users
+            indexName: users_ix_01
+            columns:
+              - column:
+                  name: username

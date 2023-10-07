@@ -1,0 +1,18 @@
+databaseChangeLog:
+  - changeSet:
+      id: schema-0.0.4
+      author: ORION
+      changes:
+        - createTable:
+            tableName: tags
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+              - column:
+                  name: name
+                  type: VARCHAR(255)
+        - addPrimaryKey:
+            tableName: tags
+            columnNames: id

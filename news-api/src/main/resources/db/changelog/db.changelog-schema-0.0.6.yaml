@@ -1,0 +1,38 @@
+databaseChangeLog:
+  - changeSet:
+      id: schema-0.0.6
+      author: ORION
+      changes:
+        - createTable:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  type: BIGINT
+              - column:
+                  name: tag_id
+                  type: BIGINT
+        - addForeignKeyConstraint:
+            baseTableName: news_tags
+            baseColumnNames: news_article_id
+            referencedTableName: news_articles
+            referencedColumnNames: id
+            constraintName: fk_news_tags_news
+        - addForeignKeyConstraint:
+            baseTableName: news_tags
+            baseColumnNames: tag_id
+            referencedTableName: tags
+            referencedColumnNames: id
+            constraintName: fk_news_tags_tags
+        - createIndex:
+            tableName: news_tags
+            indexName: news_tags_fk_news_article_id_idx
+            columns:
+              - column:
+                  name: news_article_id
+        - createIndex:
+            tableName: news_tags
+            indexName: news_tags_fk_tag_id_idx
+            columns:
+              - column:
+                  name: tag_id

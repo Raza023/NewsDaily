@@ -1,0 +1,374 @@
+databaseChangeLog:
+  - changeSet:
+      id: data-0.0.4
+      author: ORION
+      changes:
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 11
+              - column:
+                  name: tag_id
+                  value: 1
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 12
+              - column:
+                  name: tag_id
+                  value: 2
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 13
+              - column:
+                  name: tag_id
+                  value: 3
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 14
+              - column:
+                  name: tag_id
+                  value: 4
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 15
+              - column:
+                  name: tag_id
+                  value: 5
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 16
+              - column:
+                  name: tag_id
+                  value: 6
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 17
+              - column:
+                  name: tag_id
+                  value: 7
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 18
+              - column:
+                  name: tag_id
+                  value: 8
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 19
+              - column:
+                  name: tag_id
+                  value: 9
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 20
+              - column:
+                  name: tag_id
+                  value: 10
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 21
+              - column:
+                  name: tag_id
+                  value: 11
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 1
+              - column:
+                  name: tag_id
+                  value: 1
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 1
+              - column:
+                  name: tag_id
+                  value: 4
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 1
+              - column:
+                  name: tag_id
+                  value: 6
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 2
+              - column:
+                  name: tag_id
+                  value: 2
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 2
+              - column:
+                  name: tag_id
+                  value: 5
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 2
+              - column:
+                  name: tag_id
+                  value: 10
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 3
+              - column:
+                  name: tag_id
+                  value: 3
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 3
+              - column:
+                  name: tag_id
+                  value: 7
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 3
+              - column:
+                  name: tag_id
+                  value: 11
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 4
+              - column:
+                  name: tag_id
+                  value: 1
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 4
+              - column:
+                  name: tag_id
+                  value: 5
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 4
+              - column:
+                  name: tag_id
+                  value: 9
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 5
+              - column:
+                  name: tag_id
+                  value: 2
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 5
+              - column:
+                  name: tag_id
+                  value: 4
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 5
+              - column:
+                  name: tag_id
+                  value: 8
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 6
+              - column:
+                  name: tag_id
+                  value: 3
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 6
+              - column:
+                  name: tag_id
+                  value: 6
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 6
+              - column:
+                  name: tag_id
+                  value: 10
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 7
+              - column:
+                  name: tag_id
+                  value: 2
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 7
+              - column:
+                  name: tag_id
+                  value: 7
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 7
+              - column:
+                  name: tag_id
+                  value: 11
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 8
+              - column:
+                  name: tag_id
+                  value: 3
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 8
+              - column:
+                  name: tag_id
+                  value: 5
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 8
+              - column:
+                  name: tag_id
+                  value: 9
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 9
+              - column:
+                  name: tag_id
+                  value: 1
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 9
+              - column:
+                  name: tag_id
+                  value: 4
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 9
+              - column:
+                  name: tag_id
+                  value: 8
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 10
+              - column:
+                  name: tag_id
+                  value: 2
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 10
+              - column:
+                  name: tag_id
+                  value: 7
+        - insert:
+            tableName: news_tags
+            columns:
+              - column:
+                  name: news_article_id
+                  value: 10
+              - column:
+                  name: tag_id
+                  value: 11

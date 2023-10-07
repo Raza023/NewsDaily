@@ -1,0 +1,109 @@
+:root {
+    --clr-gray-light: #d7dfe2;
+    --clr-gray-med: #616b74;
+    --clr-gray-dark: #414b56;
+    --clr-link: #4d97b2;
+    --clr-popular: #ef257a;
+    --clr-technology: #651fff;
+    --clr-psychology: #e85808;
+  }
+  
+  .wrapperNewsCard {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    scroll-behavior: smooth;
+    /* justify-content: center; */
+  }
+  
+  .newscard {
+    box-shadow: 0px 2px 20px var(--clr-gray-light);
+    background: white;
+    border-radius: 1rem;
+    position: relative;
+    width: 800px;
+    height: 520px;
+    margin: 1rem;
+    transition: 250ms all ease-in-out;
+    cursor: pointer;
+  }
+  
+  .newscard:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 2px 40px var(--clr-gray-light);
+  }
+  
+  .newsbanner-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+    height: 14rem;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+  }
+  
+
+
+  
+  .newscard-body {
+    margin: 14rem 1rem 1rem 1rem;
+  }
+  
+  .blog-hashtag {
+    font-size: 0.9rem;
+    font-weight: 500;
+    
+    color: var(--clr-link);
+  }
+  
+  .blog-title {
+    line-height: 1.5rem;
+    /* margin: 1rem 0 0.5rem; */
+  }
+  
+  .blog-description {
+    color: var(--clr-gray-med);
+    font-size: 0.9rem;
+  }
+  
+  .newscard-profile {
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+  }
+  
+  .profile-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .newscard-profile-info {
+    margin-left: 1rem;
+  }
+  
+  .profile-name {
+    font-size: 1rem;
+  }
+  
+  .profile-followers {
+    color: var(--clr-gray-med);
+    font-size: 0.9rem;
+  }
+  
+#readmore{
+  font-family: Georgia, serif;
+font-size: 16px;
+letter-spacing: 0.8px;
+word-spacing: 0px;
+color: #336FFF;
+font-weight: 400;
+text-decoration: underline solid rgb(68, 68, 68);
+font-style: italic;
+font-variant: normal;
+text-transform: capitalize;
+}

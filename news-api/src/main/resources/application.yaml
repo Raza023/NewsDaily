@@ -1,0 +1,47 @@
+spring:
+  application:
+    name: NewsDaily
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: ${news.google.client-id}
+            client-secret: ${news.google.client-secret}
+            scope:
+              - email
+              - profile
+  profiles:
+    include:
+      #      - prod
+      - local
+  datasource:
+    url: ${news.db.url}
+    username: ${news.db.username:}
+    password: ${news.db.password:}
+  liquibase:
+    contexts: ${news.liquibase.contexts:}
+  h2:
+    console:
+      enabled: ${h2.console.enabled:false}
+  jpa:
+    hibernate:
+      ddl-auto: update # make this property none if you want to retain your data in the database
+  mvc:
+    throw-exception-if-no-handler-found: true
+  web:
+    resources:
+      add-mappings: false
+logging:
+  level:
+    sql: debug
+#    web: debug
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always

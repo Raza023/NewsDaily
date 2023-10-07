@@ -1,0 +1,44 @@
+databaseChangeLog:
+  - changeSet:
+      id: schema-0.0.2
+      author: ORION
+      changes:
+        - createTable:
+            tableName: news_articles
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+              - column:
+                  name: title
+                  type: VARCHAR(255)
+              - column:
+                  name: content
+                  type: VARCHAR(255)
+              - column:
+                  name: posted_at
+                  type: TIMESTAMP
+              - column:
+                  name: is_approved
+                  type: BOOLEAN
+              - column:
+                  name: is_disabled
+                  type: BOOLEAN
+              - column:
+                  name: is_ad
+                  type: BOOLEAN
+              - column:
+                  name: fk_user_id
+                  type: BIGINT
+#                  nullable: true
+        - addPrimaryKey:
+            tableName: news_articles
+            columnNames: id
+        - addForeignKeyConstraint:
+            baseTableName: news_articles
+            baseColumnNames: fk_user_id
+            referencedTableName: users
+            referencedColumnNames: id
+            constraintName: fk_user_id
+            nullable: true

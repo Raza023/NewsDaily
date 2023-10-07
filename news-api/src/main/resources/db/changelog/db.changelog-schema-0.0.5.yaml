@@ -1,0 +1,39 @@
+databaseChangeLog:
+  - changeSet:
+      id: schema-0.0.5
+      author: ORION
+      changes:
+        - createTable:
+            tableName: audit_trails
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+              - column:
+                  name: news_id
+                  type: BIGINT
+              - column:
+                  name: created_at
+                  type: TIMESTAMP
+              - column:
+                  name: ip_address
+                  type: VARCHAR(25)
+              - column:
+                  name: fk_user_id
+                  type: BIGINT
+        - addPrimaryKey:
+            tableName: audit_trails
+            columnNames: id
+        - addForeignKeyConstraint:
+            baseTableName: audit_trails
+            baseColumnNames: fk_user_id
+            referencedTableName: users
+            referencedColumnNames: id
+            constraintName: fk_audits_users
+        - createIndex:
+            tableName: audit_trails
+            indexName: audit_trails_fk_user_id_idx
+            columns:
+              - column:
+                  name: fk_user_id

@@ -1,0 +1,131 @@
+databaseChangeLog:
+  - changeSet:
+      id: data-0.0.3
+      author: ORION
+      changes:
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: content
+                  value: 'Great article! I found the information very informative and relevant to the topic.'
+              - column:
+                  name: posted_at
+                  value: '2023-09-19 14:45:00'
+              - column:
+                  name: is_approved
+                  value: true
+              - column:
+                  name: is_disabled
+                  value: false
+              - column:
+                  name: fk_user_id
+                  value: 4
+              - column:
+                  name: fk_news_article_id
+                  value: 1
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: content
+                  value: 'I have a different perspective on this issue. It would be interesting to explore the other side of the argument.'
+              - column:
+                  name: posted_at
+                  value: '2023-09-19 15:45:00'
+              - column:
+                  name: is_approved
+                  value: false
+              - column:
+                  name: is_disabled
+                  value: false
+              - column:
+                  name: fk_user_id
+                  value: 4
+              - column:
+                  name: fk_news_article_id
+                  value: 2
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: content
+                  value: 'This news article has provided valuable insights into the current situation. Thanks for sharing.'
+              - column:
+                  name: posted_at
+                  value: '2023-09-19 16:30:00'
+              - column:
+                  name: is_approved
+                  value: true
+              - column:
+                  name: is_disabled
+                  value: false
+              - column:
+                  name: fk_user_id
+                  value: 4
+              - column:
+                  name: fk_news_article_id
+                  value: 3
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: content
+                  value: 'I appreciate the in-depth analysis in this article. It helps readers understand the complexities of the issue.'
+              - column:
+                  name: posted_at
+                  value: '2023-09-19 17:15:00'
+              - column:
+                  name: is_approved
+                  value: true
+              - column:
+                  name: is_disabled
+                  value: false
+              - column:
+                  name: fk_user_id
+                  value: 4
+              - column:
+                  name: fk_news_article_id
+                  value: 4
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: content
+                  value: 'The data presented in this article is eye-opening. Its essential to stay informed about these trends.'
+              - column:
+                  name: posted_at
+                  value: '2023-09-19 18:00:00'
+              - column:
+                  name: is_approved
+                  value: true
+              - column:
+                  name: is_disabled
+                  value: false
+              - column:
+                  name: fk_user_id
+                  value: 4
+              - column:
+                  name: fk_news_article_id
+                  value: 5
+        - insert:
+            tableName: comments
+            columns:
+              - column:
+                  name: content
+                  value: 'Im not sure I agree with the conclusions drawn in this article.'
+              - column:
+                  name: posted_at
+                  value: '2023-09-19 19:30:00'
+              - column:
+                  name: is_approved
+                  value: false
+              - column:
+                  name: is_disabled
+                  value: false
+              - column:
+                  name: fk_user_id
+                  value: 5
+              - column:
+                  name: fk_news_article_id
+                  value: 6

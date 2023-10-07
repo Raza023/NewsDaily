@@ -1,0 +1,35 @@
+databaseChangeLog:
+  - changeSet:
+      id: data-0.0.1
+      author: ORION
+      changes:
+        - insert:
+            tableName: audit_trails
+            columns:
+              - column:
+                  name: news_id
+                  value: 1
+              - column:
+                  name: created_at
+                  value: '2023-09-20 14:30:00'
+              - column:
+                  name: ip_address
+                  value: '203.215.182.66'
+              - column:
+                  name: fk_user_id
+                  value: 1
+        - insert:
+            tableName: audit_trails
+            columns:
+              - column:
+                  name: news_id
+                  value: 1
+              - column:
+                  name: created_at
+                  value: '2023-09-20 15:45:00'
+              - column:
+                  name: ip_address
+                  value: '192.168.1.100'
+              - column:
+                  name: fk_user_id
+                  value: 2

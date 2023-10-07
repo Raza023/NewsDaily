@@ -1,0 +1,57 @@
+databaseChangeLog:
+  - changeSet:
+      id: schema-0.0.3
+      author: ORION
+      changes:
+        - createTable:
+            tableName: comments
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+              - column:
+                  name: content
+                  type: VARCHAR(255)
+              - column:
+                  name: posted_at
+                  type: TIMESTAMP
+              - column:
+                  name: is_approved
+                  type: BOOLEAN
+              - column:
+                  name: is_disabled
+                  type: BOOLEAN
+              - column:
+                  name: fk_user_id
+                  type: BIGINT
+              - column:
+                  name: fk_news_article_id
+                  type: BIGINT
+        - addPrimaryKey:
+            tableName: comments
+            columnNames: id
+        - addForeignKeyConstraint:
+            baseTableName: comments
+            baseColumnNames: fk_user_id
+            referencedTableName: users
+            referencedColumnNames: id
+            constraintName: fk_comments_users
+        - addForeignKeyConstraint:
+            baseTableName: comments
+            baseColumnNames: fk_news_article_id
+            referencedTableName: news_articles
+            referencedColumnNames: id
+            constraintName: fk_comments_news
+        - createIndex:
+            tableName: comments
+            indexName: comments_fk_user_id_idx
+            columns:
+              - column:
+                  name: fk_user_id
+        - createIndex:
+            tableName: comments
+            indexName: comments_fk_news_article_id_idx
+            columns:
+              - column:
+                  name: fk_news_article_id

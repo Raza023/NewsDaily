@@ -1,0 +1,71 @@
+databaseChangeLog:
+  - changeSet:
+      id: data-0.0.4
+      author: ORION
+      changes:
+        - insert:
+            tableName: tags
+            columns:
+              - column:
+                  name: name
+                  value: 'sports'
+        - insert:
+            tableName: tags
+            columns:
+              - column:
+                  name: name
+                  value: 'fashion'
+        - insert:
+            tableName: tags
+            columns:
+              - column:
+                  name: name
+                  value: 'politics'
+        - insert:
+            tableName: tags
+            columns:
+              - column:
+                  name: name
+                  value: 'technology'
+        - insert:
+            tableName: tags
+            columns:
+              - column:
+                  name: name
+                  value: 'entertainment'
+        - insert:
+            tableName: tags
+            columns:
+              - column:
+                  name: name
+                  value: 'health'
+        - insert:
+            tableName: tags
+            columns:
+              - column:
+                  name: name
+                  value: 'business'
+        - insert:
+            tableName: tags
+            columns:
+              - column:
+                  name: name
+                  value: 'science'
+        - insert:
+            tableName: tags
+            columns:
+              - column:
+                  name: name
+                  value: 'environment'
+        - insert:
+            tableName: tags
+            columns:
+              - column:
+                  name: name
+                  value: 'travel'
+        - insert:
+            tableName: tags
+            columns:
+              - column:
+                  name: name
+                  value: 'crime'
