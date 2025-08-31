@@ -4,8 +4,8 @@ news:
     username: sa
     password:
   google:
-    client-id: 1063003635047-nfd4frr7i3jonjk7reevti6drhfgmk1b.apps.googleusercontent.com
-    client-secret: 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
+    client-id: ${GOOGLE_CLIENT_ID}
+    client-secret: ${GOOGLE_CLIENT_SECRET}
 spring:
   jpa:
     open-in-view: false
